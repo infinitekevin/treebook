@@ -1,5 +1,11 @@
 kevin:
-    first_name: "Kevin"
-    last_name: "Lehtiniitty"
-    email: "kevin@tinitt.com"
-    profile_name: "kevinl"
+  first_name: "Kevin"
+  last_name: "Lehtiniitty"
+  email: "kevin@tinitt.com"
+  profile_name: "kevinl"
+
+alec:
+  first_name: "Alec"
+  last_name: "Gorge"
+  email: "alec@tinitt.com"
+  profile_name: "alecgorge"
