@@ -19,3 +19,7 @@
  .alert {
  	margin-top: 10px;
  }
+
+ .help-block {
+	font-style: italic;
+ }
