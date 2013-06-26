@@ -5,6 +5,9 @@ class UserTest < ActiveSupport::TestCase
   #   assert true
   # end
 
+  should have_many(:user_friendships)
+  should have_many(:friends)
+
   test "a user should enter a first name" do
   	user = User.new
   	assert !user.save
