@@ -8,6 +8,8 @@ Treebook::Application.routes.draw do
     get 'login', to: 'devise/sessions#new', as: :login
   end
 
+  resources :user_friendships
+
   resources :statuses
   get 'feed', to: 'statuses#index'
   root to: 'statuses#index'
