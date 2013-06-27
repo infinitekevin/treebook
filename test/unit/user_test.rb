@@ -52,4 +52,21 @@ class UserTest < ActiveSupport::TestCase
     user.profile_name = "kevin_l_2"
     assert user.valid?
   end
+
+  test "no error is reaised trying to access a friend list" do
+    assert_nothing_raised do
+      users(:kevin).friends
+    end
+  end
+
+  test "that creating friendships on a user works" do
+    users(:kevin).friends << users(:mike)
+    users(:kevin).friends.reload
+    assert users(:kevin).friends.include?(users(:mike))
+  end
+
+  test "that creating a friendship based on user id and friend id works" do
+    UserFriendship.create user_id: users(:kevin).id, friend_id: users(:mike).id
+    assert users(:kevin).friends.include?(users(:mike))
+  end
 end
