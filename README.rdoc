@@ -1,6 +1,6 @@
 == Welcome to Treebook
 
-Treebook is a ruby on rails web application that emulates major features from major social networks. Most of the code is from the teamtreehouse.com class on ruby.
+Treebook is a ruby on rails web application that emulates major features from major social networks. Most of the code is from the teamtreehouse.com class on ruby with minor orginial tweaks and enhancements.
 
 
 == Getting Started
